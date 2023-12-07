@@ -6,8 +6,8 @@ import livro5 from "../../imagens/livro5.png"
 
 export const livros = [
     { nome: "CSS Eficiente", id: 1, src: livro1 },
-    { nome: "Vue.js", id: 1, src: livro2 },
-    { nome: "Angular 11 e Firebase", id: 2, src: livro3 },
-    { nome: "Acessibilidade na Web", id: 3, src: livro4 },
-    { nome: "Bootstrap 4", id: 4, src: livro5 },
+    { nome: "Vue.js", id: 2, src: livro2 },
+    { nome: "Angular 11 e Firebase", id: 3, src: livro3 },
+    { nome: "Acessibilidade na Web", id: 4, src: livro4 },
+    { nome: "Bootstrap 4", id: 5, src: livro5 },
 ]
