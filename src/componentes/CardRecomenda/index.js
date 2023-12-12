@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import {styled,  StyleSheetManager} from "styled-components"
 import { Titulo } from "../Titulo"
 
 const Card = styled.div`
@@ -8,10 +8,14 @@ const Card = styled.div`
     border-radius: 10px;
     display: flex;
     margin: 20px auto;
-    max-width: 550px;
+    max-width: 500px;
     padding: 25px 20px;
     justify-content: space-around;
     width: 100%;  
+
+    @media (max-width: 700px) {
+        max-width:80%;
+    }
 `
 
 const Botao = styled.button`
@@ -20,10 +24,13 @@ const Botao = styled.button`
     padding: 10px 0px;
     font-size: 16px;
     border: none;
+    border-radius: 5px;
     font-weight: 900;
     display: block;
+    margin-top: 5px;
     text-align: center;
     width: 150px;
+    margin-left:20px;
     &:hover {
         cursor: pointer;
     }
@@ -42,14 +49,16 @@ const Subtitulo = styled.h4`
 
 const ImgLivro = styled.img`
     width: 150px;
+    margin-left:20px;
 `
 
 function CardRecomenda({ titulo, subtitulo, descricao, imagem }) {
     return (
+        <StyleSheetManager shouldForwardProp={(prop) => prop !== 'cor'}>
         <Card>
             <div>
                 <Titulo
-                    tamanhoFonte="24px"
+                    tamanhofonte="24px"
                     cor="#EB9B00"
                     alinhamento="left"
                 >{titulo}
@@ -62,6 +71,7 @@ function CardRecomenda({ titulo, subtitulo, descricao, imagem }) {
                 <Botao>Saiba mais</Botao>
             </div>
         </Card>
+        </StyleSheetManager>
     )
 }
 

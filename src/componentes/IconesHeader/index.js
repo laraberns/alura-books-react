@@ -3,13 +3,15 @@ import sacola from '../../imagens/sacola.svg'
 import styled from "styled-components"
 
 const Icone = styled.li`
-  margin-right: 40px;
   width: 25px;
 `
 
 const Icones = styled.ul`
   display: flex;
   align-items: center;
+ padding: 0;
+ gap:25px;
+ justify-content: center;
 `
 
 const icones = [perfil, sacola]
@@ -17,8 +19,8 @@ const icones = [perfil, sacola]
 function IconesHeader() {
   return (
     <Icones>
-      {icones.map((icone) => (
-        <Icone>
+      {icones.map((icone, index) => (
+        <Icone key={index}>
           <img src={icone} alt='imagem de icone' />
         </Icone>
       ))}
