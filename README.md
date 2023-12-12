@@ -3,10 +3,14 @@
 Welcome to the AluraBooks React project repository! This project serves as a hands-on learning experience for practicing React concepts, including working with components, props, styled components, and managing state using `useState`. The project has been integrated with a Node.js server to dynamically fetch and manage book data through CRUD operations.
 
 ## Desktop Display
-![desktop gif](./src/imagens/desktop.gif )
+<p align="center">
+  <img src="./src/imagens/desktop.gif" width="600" alt="desktop gif">
+</p>
 
 ## Mobile Display
-![mobile gif](./src/imagens/mobile.gif )
+<p align="center">
+  <img src="./src/imagens/mobile.gif" width="200" alt="mobile gif">
+</p>
 
 ## Project Objectives
 
